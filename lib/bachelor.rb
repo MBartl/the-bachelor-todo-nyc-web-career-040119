@@ -55,13 +55,15 @@ def get_occupation(data, hometown)
 end
 
 
-def get_average_age_for_season(data, season)
+def get_average_age_for_season(data, season_input)
   rounded_age = 0.0
   i = 0
   data.each do |season, contestant_data|
-    while i < contestant_data.length do
-      rounded_age += contestant_data[i][:age].to_i
-      i += 1
+    if season.to_s == season
+      while i < contestant_data.length do
+        rounded_age += contestant_data[i][:age].to_i
+        i += 1
+      end
     end
   end
   return rounded_age
