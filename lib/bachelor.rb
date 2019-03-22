@@ -35,8 +35,10 @@ def count_contestants_by_hometown(data, hometown)
       if contestant_data[i][:hometown].to_s == hometown
         hometown_counter += 1
       end
-      i++
-  # code here
+      i += 1
+    end
+  end
+  return hometown_counter
 end
 
 get_contestant_name(hash, "Psychiatric Nurse")
