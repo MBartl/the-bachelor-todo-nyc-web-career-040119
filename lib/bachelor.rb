@@ -41,9 +41,9 @@ def count_contestants_by_hometown(data, hometown)
   return hometown_counter
 end
 
-count_contestants_by_hometown(hash, "Portland, OR")
+count_contestants_by_hometown(hash, "Minneapolis, MN")
 
-Minneapolis, MN
+
 def get_occupation(data, hometown)
   # code here
 end
