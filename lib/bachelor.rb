@@ -15,7 +15,10 @@ end
 
 
 def get_contestant_name(data, occupation)
-  # code here
+  data.each do |season, contestant_data|
+    i = 0
+    while i < contestant_data.length do
+      if contestant_data[i][occupation]
 end
 
 
