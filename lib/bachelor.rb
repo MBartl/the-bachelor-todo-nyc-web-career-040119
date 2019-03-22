@@ -64,6 +64,5 @@ def get_average_age_for_season(data, season)
     end
     i += 1
   end
-  rounded_age = rounded_age.round
-
+  return rounded_age.round
 end
