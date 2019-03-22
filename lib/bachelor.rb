@@ -4,7 +4,6 @@ def get_first_name_of_season_winner(data, season)
       i = 0
       while i < contestant_data.length do
         if contestant_data[i]["status"].to_s == "Winner"
-          return "Winner found"
           name_array = contestant_data[i]["name"].to_s.split(' ')
           return name_array[0]
         end
