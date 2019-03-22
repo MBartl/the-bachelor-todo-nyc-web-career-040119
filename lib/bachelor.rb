@@ -1,13 +1,12 @@
 def get_first_name_of_season_winner(data, season)
   data.each do |season_data, contestant_data|
     if season_data.to_s == season
-      return contestant_data[0]["status"]
       i = 0
       while i < contestant_data.length do
-        return contestant_data[0][:status]
-        if contestant_data[i][:status].to_s == "Winner"
+        return contestant_data[0]["status"]
+        if contestant_data[i]["status"].to_s == "Winner"
           return "Winner found"
-          name_array = contestant_data[i][:name].to_s.split(' ')
+          name_array = contestant_data[i]["name"].to_s.split(' ')
           return name_array[0]
         end
         i += 1
