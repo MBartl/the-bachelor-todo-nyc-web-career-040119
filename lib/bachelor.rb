@@ -43,6 +43,7 @@ end
 
 get_contestant_name(hash, "Portland, OR")
 
+Minneapolis, MN
 def get_occupation(data, hometown)
   # code here
 end
