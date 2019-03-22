@@ -25,6 +25,8 @@ def get_contestant_name(data, occupation)
   end
 end
 
+get_contestant_name(data, "Registered nurse")
+
 
 def count_contestants_by_hometown(data, hometown)
   # code here
