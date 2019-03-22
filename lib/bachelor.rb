@@ -20,6 +20,9 @@ def get_contestant_name(data, occupation)
     while i < contestant_data.length do
       if contestant_data[i][:occupation].to_s == occupation
         return contestant_data[i][:name].to_s
+      end
+    end
+  end
 end
 
 
