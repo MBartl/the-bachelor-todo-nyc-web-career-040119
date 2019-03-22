@@ -25,7 +25,7 @@ def get_contestant_name(data, occupation)
   end
 end
 
-get_contestant_name(data, "Psychiatric Nurse")
+get_contestant_name(hash, "Psychiatric Nurse")
 
 
 def count_contestants_by_hometown(data, hometown)
