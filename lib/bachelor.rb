@@ -1,10 +1,11 @@
 def get_first_name_of_season_winner(data, season_input)
   data.each do |season, contestant|
-    return season
+    if season_input = season
+      return season
   end
 end
 
-get_first_name_of_season_winner(hash, "Season 18")
+get_first_name_of_season_winner(hash, "season 18")
 
 def get_contestant_name(data, occupation)
   # code here
