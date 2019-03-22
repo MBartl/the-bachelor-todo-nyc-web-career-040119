@@ -56,15 +56,17 @@ end
 
 
 def get_average_age_for_season(data, season)
-  rounded_age = 0.0
+  total_ages = 0.0
   data.each do |season, contestant_data|
     i = 0
     while i < contestant_data.length do
-      rounded_age += contestant_data[i][:age].to_i
+      total_ages += contestant_data[i][:age].to_i
       i += 1
     end
+    total_ages = 
   end
-  return rounded_age.round
+  rounded_age = total_ages.round
+  return rounded_age
 end
 
 get_average_age_for_season(hash, "season 10")
