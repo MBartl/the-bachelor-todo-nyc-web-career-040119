@@ -61,8 +61,8 @@ def get_average_age_for_season(data, season)
     i = 0
     while i < contestant_data.length do
       rounded_age += contestant_data[i][:age].to_i
+      i += 1
     end
-    i += 1
   end
   return rounded_age.round
 end
