@@ -64,10 +64,10 @@ def get_average_age_for_season(data, season)
       i += 1
     end
   end
-  return i
+  return rounded_age
   rounded_age = rounded_age/i
   return rounded_age.round
 end
 
-get_average_age_for_season(hash, "season 10")
+get_average_age_for_season(hash, "season 11")
 
