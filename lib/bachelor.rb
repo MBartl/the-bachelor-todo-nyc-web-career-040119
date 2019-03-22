@@ -21,6 +21,7 @@ def get_contestant_name(data, occupation)
       if contestant_data[i][:occupation].to_s == occupation
         return contestant_data[i][:name].to_s
       end
+      i += 1
     end
   end
 end
