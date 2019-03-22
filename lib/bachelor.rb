@@ -26,13 +26,20 @@ def get_contestant_name(data, occupation)
   end
 end
 
-get_contestant_name(hash, "Psychiatric Nurse")
-
 
 def count_contestants_by_hometown(data, hometown)
+  hometown_counter = 0
+  data.each do |season, contestant_data|
+    i = 0
+    while i < contestant_data.length do
+      if contestant_data[i][:hometown].to_s == hometown
+        hometown_counter += 1
+      end
+      i++
   # code here
 end
 
+get_contestant_name(hash, "Psychiatric Nurse")
 
 def get_occupation(data, hometown)
   # code here
