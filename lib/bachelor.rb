@@ -1,6 +1,7 @@
 def get_first_name_of_season_winner(data, season_input)
   data.each do |season, contestant|
-    return season.to_s
+    if season.to_s == season_input
+      return 'correct'
     end
   end
 end
