@@ -3,6 +3,7 @@ def get_first_name_of_season_winner(data, season_input)
     if season_input == season
       contestant.each do 
       return contestant[:name]
+    end
       if contestant[:status] = "winner"
         name_array = contestant[:name].split(/ /)
         return name_array[0]
