@@ -13,7 +13,7 @@ def get_first_name_of_season_winner(data, season_input)
   end
 end
 
-get_first_name_of_season_winner(hash, "season 18")
+get_first_name_of_season_winner(hash, "season 12")
 
 def get_contestant_name(data, occupation)
   # code here
