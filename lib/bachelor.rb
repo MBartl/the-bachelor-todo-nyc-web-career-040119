@@ -41,7 +41,7 @@ def count_contestants_by_hometown(data, hometown)
   return hometown_counter
 end
 
-get_contestant_name(hash, "Psychiatric Nurse")
+get_contestant_name(hash, "Portland, OR")
 
 def get_occupation(data, hometown)
   # code here
