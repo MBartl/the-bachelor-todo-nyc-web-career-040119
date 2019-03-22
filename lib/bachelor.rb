@@ -41,11 +41,17 @@ def count_contestants_by_hometown(data, hometown)
   return hometown_counter
 end
 
-count_contestants_by_hometown(hash, "Minneapolis, MN")
-
 
 def get_occupation(data, hometown)
-  # code here
+  data.each do |season, contestant_data|
+    i = 0
+    while i < contestant_data.length do
+      if contestant_data[i][:hometown].to_s == hometown
+        return contestant_data[i][:occupation].to_s
+      end
+      i += 1
+    end
+  end
 end
 
 
